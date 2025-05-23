@@ -1,0 +1,13 @@
+Uuid: 4b19f5f577254c2ebf0ab63df71d934d
+ExtensionType: 1
+Name: UnUnicode
+RepoName: burp-ununicode
+ScreenVersion: 1.2.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: godfuzz3r
+ShortDescription: This extension unescapes unicode-escaped sequences, supporting websockets and any content type. However, it only implements pretty print to JSON.
+EntryPoint: ./ununicode-1.2-jar-with-dependencies.jar
+BuildCommand: ./gradlew jar
+SupportedProducts: Pro, Community
