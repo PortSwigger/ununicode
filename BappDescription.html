@@ -1,7 +1,15 @@
-<p>UnUnicode is a Burp extension for unescaping unicode-escaped sequences. Its developed using the Burp Suite Montoya API and supports websockets. While its primary purpose is to handle unicode-escaped sequences, please note that it does not perfectly convert double-byte characters such as emojis. Despite this limitation, it remains a useful tool for routine tasks involving unicode characters.</p>
+<p>This extension unescapes unicode-escaped sequences in HTTP requests and responses, as well as WebSocket messages. It helps uncover obfuscated payloads or identifiers that use multiple layers of Unicode escaping, improving visibility for manual inspection.</p>
 
 <h2>Features</h2>
-<p>This extension is versatile, working with any content type. However, the pretty print feature is currently implemented for JSON content only.</p>
+<ul>
+  <li>Automatically decodes nested Unicode sequences in HTTP messages</li>
+  <li>Adds a custom tab for viewing the unescaped content of selected requests and responses</li>
+  <li>Provides "pretty print" functionality for JSON content</li>
+</ul>
 
 <h2>Usage</h2>
-<p>The UnUnicode extension is quite straightforward to use. Once installed, it automatically transforms unicode-escaped sequences into their unescaped forms, enhancing the readability of the data being examined. It lacks a specific user interface, instead running in the background to process and convert unicode-escaped sequences without user intervention.</p>
+<ol>
+  <li>Select a request or response in the HTTP history or other Burp tool.</li>
+  <li>Navigate to the "UnUnicode" tab to view the decoded version of the message.</li>
+  <li>Use the decoded output to better understand any obfuscated content.</li>
+</ol>
