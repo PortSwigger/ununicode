@@ -7,7 +7,7 @@ SerialVersion: 1
 MinPlatformVersion: 22
 ProOnly: False
 Author: godfuzz3r
-ShortDescription: This extension unescapes unicode-escaped sequences, supporting websockets and any content type. However, it only implements pretty print to JSON.
+ShortDescription: Unescape unicode-escaped sequences.
 EntryPoint: ./ununicode-1.3-jar-with-dependencies.jar
 BuildCommand: mvn clean install
 SupportedProducts: Pro, Community
